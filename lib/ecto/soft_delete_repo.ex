@@ -105,7 +105,6 @@ defmodule Ecto.SoftDelete.Repo do
 
       defp delete_timestamp do
         DateTime.utc_now()
-        |> DateTime.truncate(:second)
       end
     end
   end
